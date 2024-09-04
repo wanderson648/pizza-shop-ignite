@@ -1,11 +1,14 @@
-import { RouterProvider } from 'react-router'
-import { router } from './routes'
+import { RouterProvider } from "react-router";
+import { router } from "./routes";
+import { Toaster } from "sonner";
 
-import './index.css'
+import "./index.css";
 
 export function App() {
-
   return (
-    <RouterProvider router={router} />
-  )
+    <>
+      <Toaster richColors/>
+      <RouterProvider router={router} />
+    </>
+  );
 }
